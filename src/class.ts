@@ -1,6 +1,6 @@
 class Customer {
     readonly id: number;
-    name: string;
+    name: string = "Fajar";
     age?: number;
 
     constructor(id: number, name: string) {
@@ -8,8 +8,8 @@ class Customer {
         this.name = name;
     }
 
-    sayHello(): string {
-        return `Hello my name is ${this.name}`;
+    sayHello(name: string): void {
+        console.info(`Hello ${name},  my name is ${this.name}`);
     }
 }
 
