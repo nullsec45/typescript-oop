@@ -15,4 +15,10 @@ describe("Super Constructor", () => {
             this.department = department;
         }
     }
+
+    it("should support super constructor", function () {
+        const employee = new Employee("Fajar", "IT");
+        console.info(employee.name);
+        console.info(employee.department);
+    })
 })
